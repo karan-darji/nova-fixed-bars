@@ -22,9 +22,7 @@ function calibrateWidths() {
     const content = document.querySelector('#nova .content')
 
     sidebar.style = 'height: 100%'
-    if(!content.className.includes('lg:block left-0 bottom-0 lg:top-[56px] lg:bottom-auto')){
-        content.className += ' lg:block left-0 bottom-0 lg:top-[56px] lg:bottom-auto';
-    }
+
     content.style.marginLeft = sidebar.offsetWidth + 'px'
     content.style.width = 'auto'
     content.style.maxWidth = '100%'
